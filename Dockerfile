@@ -18,3 +18,5 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
     sed -i 's/CHANGE_ME/$BGCOLOR/' /usr/share/nginx/html/index.html
 
 CMD nginx -g 'daemon off;'
+# docker build -t nginx:0 .
+# docker run -p 8080:80 nginx:0
